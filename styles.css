@@ -87,8 +87,10 @@ button {
     font-weight: bold;
 }
 
-.categorylist .categoryitem .ctitemactive {
-    background-color: aqua;
+
+
+.inicioref:hover {
+    background-color:rgb(155, 34, 34);
 }
 
 .movielist {
@@ -118,4 +120,9 @@ button {
     width: 100%;
     padding: 8px 0;
     background-color: rgb(25, 25, 27);
+}
+
+.redireccioninicio {
+    margin-top: 6.5%;
+    margin-bottom: 10%;
 }

@@ -10,6 +10,10 @@ function filtermovies(category) {
     const crimen = ["knivesout", "nightcrawler", "focus", "thedarkknight", "themask", "zootopia", "prisioners", "killbill"];
     const accion = ["bullettrain", "babydriver", "scottpilgrim", "furyroad", "thelordoftherings", "kungfupanda", "diehard", "killbill"];
 
+    document.querySelectorAll("a.categoryitem").forEach(element => {
+        element.style.backgroundColor="rgb(156, 10, 10)";
+    })
+    document.querySelector(`[category="${category}"]`).style = "background-color:  rgba(156, 10, 10, 0.388)";
 
     all.forEach(element => {
         document.getElementById(element).style.display = "none";

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link type="text/css" href="styles.css" rel="stylesheet">
     <meta charset="utf-8">
@@ -9,34 +10,36 @@
 
 <body>
     <header>
-        <div class="movierecs">
-            <h1>MovieRecs <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
-                    fill="rgb(156, 10, 10)">
-                    <path
-                        d="m140-800 74 152h130l-74-152h89l74 152h130l-74-152h89l74 152h130l-74-152h112q24 0 42 18t18 42v520q0 24-18 42t-42 18H140q-24 0-42-18t-18-42v-520q0-24 18-42t42-18Zm0 212v368h680v-368H140Zm0 0v368-368Z" />
-                </svg>
+        <div class="cabeza">
+            <div class="movierecs">
+                <h1>MovieRecs <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960"
+                        width="48px" fill="rgb(156, 10, 10)">
+                        <path
+                            d="m140-800 74 152h130l-74-152h89l74 152h130l-74-152h89l74 152h130l-74-152h112q24 0 42 18t18 42v520q0 24-18 42t-42 18H140q-24 0-42-18t-18-42v-520q0-24 18-42t42-18Zm0 212v368h680v-368H140Zm0 0v368-368Z" />
+                    </svg>
+            </div>
+            <div class="homebutton">
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                        fill="rgb(156, 10, 10)">
+                        <path
+                            d="M220-180h150v-250h220v250h150v-390L480-765 220-570v390Zm-60 60v-480l320-240 320 240v480H530v-250H430v250H160Zm320-353Z" />
+                    </svg>
+                </a>
+            </div>
+            </h1>
         </div>
-        <div class="homebutton">
-            <a href="index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
-                    fill="rgb(156, 10, 10)">
-                    <path
-                        d="M220-180h150v-250h220v250h150v-390L480-765 220-570v390Zm-60 60v-480l320-240 320 240v480H530v-250H430v250H160Zm320-353Z" />
-                </svg>
-            </a>
-        </div>
-        </h1>
-
     </header>
 
     <main>
+
         <div class="wrap">
             <h1 class="titulo">CATÁLOGO</h1>
             <br>
             <br>
             <div class="moviewrapper">
                 <div class="categorylist">
-                    <a  href="#" class="categoryitem" category="all" onclick="filtermovies('all')">Todo</a>
+                    <a href="#" class="categoryitem" category="all" onclick="filtermovies('all')">Todo</a>
                     <a href="#" class="categoryitem" category="comedia" onclick="filtermovies('comedia')">Comedia</a>
                     <a href="#" class="categoryitem" category="drama" onclick="filtermovies('drama')">Drama</a>
                     <a href="#" class="categoryitem" category="romance" onclick="filtermovies('romance')">Romance</a>
@@ -50,39 +53,41 @@
                 </div>
                 <section class="movielist">
                     <div class="movieitem" id="thetrumanshow">
-                        <p>The truman show</p>
+                        <p>The Truman Show </p>
                         <img src="images/thetrumanshow.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="10thingsihateaboutyou">
-                        <p>10 Things I hate about you</p>
+                        <p>10 Things I Hate About You</p>
                         <img src="images/10thingsihateaboutyou.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="eeaao">
-                        <p>Everything everywhere all at once</p>
-                        <img src="images/everythingeverywhereallatonce.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_eeaao">
+                            <p>Everything Everywhere All At Once</p>
+                            <img src="images/everythingeverywhereallatonce.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="ted">
                         <p>TED</p>
                         <img src="images/ted.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="homealone">
-                        <p>Home alone</p>
+                        <p>Home Alone</p>
                         <img src="images/homealone.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="themenu">
-                        <p>The menu</p>
+                        <p>The Menu</p>
                         <img src="images/themenu.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="knivesout">
-                        <p>Knives out</p>
+                        <p>Knives Out</p>
                         <img src="images/knivesout.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="bullettrain">
-                        <p>Bullet train</p>
+                        <p>Bullet Train</p>
                         <img src="images/bullettrain.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="lalaland">
-                        <p>Lalaland</p>
+                        <p>La La Land</p>
                         <img src="images/lalaland.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="arrival">
@@ -90,15 +95,15 @@
                         <img src="images/arrival.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="abouttime">
-                        <p>About time</p>
+                        <p>About Time</p>
                         <img src="images/abouttime.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="thelionking">
-                        <p>The lion king</p>
+                        <p>The Lion King</p>
                         <img src="images/thelionking2.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="gonegirl">
-                        <p>Gone girl</p>
+                        <p>Gone Girl</p>
                         <img src="images/gonegirl.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="nightcrawler">
@@ -106,23 +111,23 @@
                         <img src="images/nightcrawler.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="babydriver">
-                        <p>Baby driver</p>
+                        <p>Baby Driver</p>
                         <img src="images/babydriver.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="palmsprings">
-                        <p>Palm springs</p>
+                        <p>Palm Springs</p>
                         <img src="images/palmsprings.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="midnightinparis">
-                        <p>Midnight in Paris</p>
+                        <p>Midnight In Paris</p>
                         <img src="images/midnightinparis.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="theparenttrap">
-                        <p>The parent trap</p>
+                        <p>The Parent Trap</p>
                         <img src="images/theparenttrap.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="thebutterflyeffect">
-                        <p>The butterfly effect</p>
+                        <p>The Butterfly Effect</p>
                         <img src="images/thebutterflyeffect.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="focus">
@@ -138,7 +143,7 @@
                         <img src="images/avatar.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="walle">
-                        <p>Wall-e</p>
+                        <p>Wall-E</p>
                         <img src="images/walle.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="tenet">
@@ -146,15 +151,15 @@
                         <img src="images/tenet.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="thedarkknight">
-                        <p>The dark knight</p>
+                        <p>The Dark Knight</p>
                         <img src="images/thedarkknight.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="furyroad">
-                        <p>Fury road</p>
+                        <p>MAD MAX: Fury Road</p>
                         <img src="images/furyroad.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="et">
-                        <p>ET</p>
+                        <p>E.T.</p>
                         <img src="images/et.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="theprestige">
@@ -162,15 +167,15 @@
                         <img src="images/theprestige.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="themask">
-                        <p>The mask</p>
+                        <p>The Mask</p>
                         <img src="images/themask.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="thelordoftherings">
-                        <p>The lord of the rings: The fellowship of the ring</p>
+                        <p>The Lord Of The Rings: The Fellowship Of The Ring</p>
                         <img src="images/thelordoftherings.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="thehauntedmansion">
-                        <p>The haunted mansion</p>
+                        <p>The Haunted Mansion</p>
                         <img src="images/thehauntedmansion.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="zootopia">
@@ -178,7 +183,7 @@
                         <img src="images/zootopia.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="kungfupanda">
-                        <p>Kung fu panda</p>
+                        <p>Kung Fu Panda</p>
                         <img src="images/kungfupanda.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="prisioners">
@@ -186,7 +191,7 @@
                         <img src="images/prisioners.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="diehard">
-                        <p>Die hard</p>
+                        <p>Die Hard</p>
                         <img src="images/diehard.jpg" width="90 px" height="270 px">
                     </div>
                     <div class="movieitem" id="killbill">

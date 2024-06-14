@@ -1,131 +1,113 @@
-function sugerirpelicula() {
-    const accion = document.getElementById("accion_si").checked ? true : false;
-    console.log(accion);
-    const drama = document.getElementById("drama_si").checked ? true : false;
-    console.log(drama);
-    const comedia = document.getElementById("comedia_si").checked ? true : false;
-    console.log(comedia);
-    const thriller = document.getElementById("thriller_si").checked ? true : false;
-    console.log(thriller);
-    const romance = document.getElementById("romance_si").checked ? true : false;
-    console.log(romance);
-    const familiar = document.getElementById("familiar_si").checked ? true : false;
-    console.log(familiar);
-    const crimen = document.getElementById("crimen_si").checked ? true : false;
-    console.log(crimen);
-    const fantasia = document.getElementById("fantasia_si").checked ? true : false;
-    console.log(fantasia);
-    const cienciaficcion = document.getElementById("cienciaficcion_si").checked ? true : false;
-    console.log(cienciaficcion);
-    if (romance && comedia) {
-        alert("Te recomendamos 10 Things I Hate About You")
-    }
-    if (comedia && drama) {
-        alert("Te recomendamos The Truman Show")
-    }
-    if (comedia && cienciaficcion) {
-        alert("Te recomendamos Everything Everywhere All At Once")
-    }
-    if (comedia && fantasia) {
-        alert("Te recomendamos TED")
-    }
-    if (comedia && familiar) {
-        alert("Te recomendamos Home Alone")
-    }
-    if (comedia && thriller) {
-        alert("Te recomendamos The Menu")
+function recomendarpelicula() {
+    const selector1 = document.getElementById("seleccionadorpelis1").value;
+    const selector2 = document.getElementById("seleccionadorpelis2").value;
 
-    }
-    if (comedia && crimen) {
-        alert("Te recomendamos Knives Out")
-    }
-    if (comedia && accion) {
-        alert("Te recomendamos Bullet Train")
+    let text;
 
+if ((selector1 == "romance" && selector2 == "comedia") || (selector2 == "romance" && selector1 == "comedia")) {
+        text = "10 Things I Hate About You";
+    } else if ((selector1 == "drama" && selector2 == "comedia") || (selector2 == "drama" && selector1 == "comedia")) {
+        text = "The Truman Show";
+    } else if ((selector1 == "cienciaficcion" && selector2 == "comedia") || (selector2 == "cienciaficcion" && selector1 == "comedia")) {
+        text = "Everything Everywhere All At Once";
+    } else if ((selector1 == "fantasia" && selector2 == "comedia") || (selector2 == "fantasia" && selector1 == "comedia")) {
+        text = "TED";
+    } else if ((selector1 == "familiar" && selector2 == "comedia") || (selector2 == "familiar" && selector1 == "comedia")) {
+        text = "Home Alone";
+    } else if ((selector1 == "thriller" && selector2 == "comedia") || (selector2 == "thriller" && selector1 == "comedia")) {
+        text = "The Menu";
+    } else if ((selector1 == "crimen" && selector2 == "comedia") || (selector2 == "crimen" && selector1 == "comedia")) {
+        text = "Knives Out";
+    } else if ((selector1 == "accion" && selector2 == "comedia") || (selector2 == "accion" && selector1 == "comedia")) {
+        text = "Bullet Train";
+    } else if ((selector1 == "romance" && selector2 == "drama") || (selector2 == "romance" && selector1 == "drama")) {
+        text = "La La Land";
+    } else if ((selector1 == "cienciaficcion" && selector2 == "drama") || (selector2 == "cienciaficcion" && selector1 == "drama")) {
+        text = "Arrival";
+    } else if ((selector1 == "fantasia" && selector2 == "drama") || (selector2 == "fantasia" && selector1 == "drama")) {
+        text = "About Time";
+    } else if ((selector1 == "familiar" && selector2 == "drama") || (selector2 == "familiar" && selector1 == "drama")) {
+        text = "The Lion King";
+    } else if ((selector1 == "thriller" && selector2 == "drama") || (selector2 == "thriller" && selector1 == "drama")) {
+        text = "Gone Girl";
+    } else if ((selector1 == "crimen" && selector2 == "drama") || (selector2 == "crimen" && selector1 == "drama")) {
+        text = "Nightcrawler";
+    } else if ((selector1 == "accion" && selector2 == "drama") || (selector2 == "accion" && selector1 == "drama")) {
+        text = "Baby Driver";
+    } else if ((selector1 == "cienciaficcion" && selector2 == "romance") || (selector2 == "cienciaficcion" && selector1 == "romance")) {
+        text = "Palm Springs";
+    } else if ((selector1 == "fantasia" && selector2 == "romance") || (selector2 == "fantasia" && selector1 == "romance")) {
+        text = "Midnight In Paris";
+    } else if ((selector1 == "familiar" && selector2 == "romance") || (selector2 == "familiar" && selector1 == "romance")) {
+        text = "The Parent Trap";
+    } else if ((selector1 == "thriller" && selector2 == "romance") || (selector2 == "thriller" && selector1 == "romance")) {
+        text = "The Butterfly Effect";
+    } else if ((selector1 == "crimen" && selector2 == "romance") || (selector2 == "crimen" && selector1 == "romance")) {
+        text = "Focus";
+    } else if ((selector1 == "accion" && selector2 == "romance") || (selector2 == "accion" && selector1 == "romance")) {
+        text = "Scott Pilgrim";
+    } else if ((selector1 == "fantasia" && selector2 == "cienciaficcion") || (selector2 == "fantasia" && selector1 == "cienciaficcion")) {
+        text = "Avatar";
+    } else if ((selector1 == "familiar" && selector2 == "cienciaficcion") || (selector2 == "familiar" && selector1 == "cienciaficcion")) {
+        text = "Wall-E";
+    } else if ((selector1 == "thriller" && selector2 == "cienciaficcion") || (selector2 == "thriller" && selector1 == "cienciaficcion")) {
+        text = "Tenet";
+    } else if ((selector1 == "crimen" && selector2 == "cienciaficcion") || (selector2 == "crimen" && selector1 == "cienciaficcion")) {
+        text = "The Dark Knight";
+    } else if ((selector1 == "accion" && selector2 == "cienciaficcion") || (selector2 == "accion" && selector1 == "cienciaficcion")) {
+        text = "MAD MAX: Fury Road";
+    } else if ((selector1 == "familiar" && selector2 == "fantasia") || (selector2 == "familiar" && selector1 == "fantasia")) {
+        text = "E.T.";
+    } else if ((selector1 == "thriller" && selector2 == "fantasia") || (selector2 == "thriller" && selector1 == "fantasia")) {
+        text = "The Prestige";
+    } else if ((selector1 == "crimen" && selector2 == "fantasia") || (selector2 == "crimen" && selector1 == "fantasia")) {
+        text = "The Mask";
+    } else if ((selector1 == "accion" && selector2 == "fantasia") || (selector2 == "accion" && selector1 == "fantasia")) {
+        text = "The Lord of the Rings: The Fellowship of the Rings";
+    } else if ((selector1 == "thriller" && selector2 == "familiar") || (selector2 == "thriller" && selector1 == "familiar")) {
+        text = "The Haunted Mansion";
+    } else if ((selector1 == "crimen" && selector2 == "familiar") || (selector2 == "crimen" && selector1 == "familiar")) {
+        text = "Zootopia";
+    } else if ((selector1 == "accion" && selector2 == "familiar") || (selector2 == "accion" && selector1 == "familiar")) {
+        text = "Kung Fu Panda";
+    } else if ((selector1 == "crimen" && selector2 == "thriller") || (selector2 == "crimen" && selector1 == "thriller")) {
+        text = "Prisioners";
+    } else if ((selector1 == "accion" && selector2 == "thriller") || (selector2 == "accion" && selector1 == "thriller")) {
+        text = "Die Hard";
+    } else if ((selector1 == "accion" && selector2 == "crimen") || (selector2 == "accion" && selector1 == "crimen")) {
+        text = "Kill Bill";
+    } else if ((selector1 == "comedia" && selector2 == "comedia") || (selector2 == "comedia" && selector1 == "comedia")) {
+        text = "Seleccionar dos géneros diferentes";
+    } else if ((selector1 == "drama" && selector2 == "drama") || (selector2 == "drama" && selector1 == "drama")) {
+        text = "Seleccionar dos géneros diferentes";
+    } else if ((selector1 == "romance" && selector2 == "romance") || (selector2 == "romance" && selector1 == "romance")) {
+        text = "Seleccionar dos géneros diferentes";
+    } else if ((selector1 == "cienciaficcion" && selector2 == "cienciaficcion") || (selector2 == "cienciaficcion" && selector1 == "cienciaficcion")) {
+        text = "Seleccionar dos géneros diferentes";
+    } else if ((selector1 == "fantasia" && selector2 == "fantasia") || (selector2 == "fantasia" && selector1 == "fantasia")) {
+        text = "Seleccionar dos géneros diferentes";
+    } else if ((selector1 == "familiar" && selector2 == "familiar") || (selector2 == "familiar" && selector1 == "familiar")) {
+        text = "Seleccionar dos géneros diferentes";
+    } else if ((selector1 == "thriller" && selector2 == "thriller") || (selector2 == "thriller" && selector1 == "thriller")) {
+        text = "Seleccionar dos géneros diferentes";
+    } else if ((selector1 == "crimen" && selector2 == "crimen") || (selector2 == "crimen" && selector1 == "crimen")) {
+        text = "Seleccionar dos géneros diferentes";
+    } else if ((selector1 == "accion" && selector2 == "accion") || (selector2 == "accion" && selector1 == "accion")) {
+        text = "Ha habido un error, seleccione dos géneros diferentes.";
     }
-    if (drama && romance) {
-        alert("Te recomendamos La La Land")
-    }
-    if (drama && cienciaficcion) {
-        alert("Te recomendamos Arrival")
-    }
-    if (drama && fantasia) {
-        alert("Te recomendamos About Time")
-    }
-    if (drama && familiar) {
-        alert("Te recomendamos The Lion King")
-    }
-    if (drama && thriller) {
-        alert("Te recomendamos Gone Girl")
-    }
-    if (drama && crimen) {
-        alert("Te recomendamos Nightcrawler")
-    }
-    if (drama && accion) {
-        alert("Te recomendamos Baby Driver")
-    }
-    if (romance && cienciaficcion) {
-        alert("Te recomendamos Palm Springs")
-    }
-    if (romance && fantasia) {
-        alert("Te recomendamos Midnight in Paris")
-    }
-    if (romance && familiar) {
-        alert("Te recomendamos The Parent Trap")
-    }
-    if (romance && thriller) {
-        alert("Te recomendamos The Butterfly Effect")
-    }
-    if (romance && crimen) {
-        alert("Te recomendamos Focus")
-    }
-    if (romance && accion) {
-        alert("Te recomendamos Scott Pilgrim")
-    }
-    if (cienciaficcion && fantasia) {
-        alert("Te recomendamos Avatar")
-    }
-    if (cienciaficcion && familiar) {
-        alert("Te recomendamos Wall-E")
-    }
-    if (cienciaficcion && thriller) {
-        alert("Te recomendamos Tenet")
-    }
-    if (cienciaficcion && crimen) {
-        alert("Te recomendamos The Dark Knight")
-    }
-    if (cienciaficcion && accion) {
-        alert("Te recomendamos MAD MAX: Fury Road")
-    }
-    if (fantasia && familiar) {
-        alert("Te recomendamos E.T.")
-    }
-    if (fantasia && thriller) {
-        alert("Te recomendamos The Prestige")
-    }
-    if (fantasia && crimen) {
-        alert("Te recomendamos The Mask")
-    }
-    if (fantasia && accion) {
-        alert("Te recomendamos The Lord of the Rings: The Fellowship of the Ring")
-    }
-    if (familiar && thriller) {
-        alert("Te recomendamos The Haunted Mansion")
-    }
-    if (familiar && crimen) {
-        alert("Te recomendamos Zootopia")
-    }
-    if (familiar && accion) {
-        alert("Te recomendamos Kung Fu Panda")
-    }
-    if (thriller && crimen) {
-        alert("Te recomendamos Prisioners")
-    }
-    if (thriller && accion) {
-        alert("Te recomendamos Die Hard")
-    }
-    if (crimen && accion) {
-        alert("Te recomendamos Kill Bill")
-    }
+
+
+    document.getElementById("sugg").showModal();
+    document.getElementById("recomendacion").innerText = text;
 }
+
+function cerrar() {
+    document.getElementById("sugg").close();
+}
+
+function redireccionarapeli(){
+
+}
+
+
 

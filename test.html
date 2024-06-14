@@ -5,11 +5,13 @@
     <link type="text/css" href="styles.css" rel="stylesheet">
     <meta charset="utf-8">
     <script src="funcionestest.js"></script>
-    <title>MovieRecs Quiz</title>
+    <title>MovieRecs Cuestionario</title>
+    <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
     <header>
+        <div class="cabeza">
         <div class="movierecs">
             <h1>MovieRecs <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
                     fill="rgb(156, 10, 10)">
@@ -25,95 +27,55 @@
                         d="M220-180h150v-250h220v250h150v-390L480-765 220-570v390Zm-60 60v-480l320-240 320 240v480H530v-250H430v250H160Zm320-353Z" />
                 </svg>
             </a>
+            </div>
         </div>
         </h1>
 
     </header>
     <main>
-        <h1 class="titulo">QUIZ</h1>
+        <h1 class="titulo">CUESTIONARIO</h1>
         <br>
         <br>
-        <p>Complete el siguiente cuestionario de acuerdo este dispuesto o no ver los siguientes géneros
-            cinematográficos (puede seleccionar cuantos quiera):</p>
+        <div class="cuestionariobloque">
+        <p>Seleccione dos géneros cinematográficos que desee ver para obtener una recomendación personalizada:</p>
         <br>
-        <div class="preguntasquiz">
-        <form action="/formulario" method="post">
-            <ol>
-
-                <li>
-                    <label for="accion_si">Acción</label>
-                    <input type="radio" id="accion_si" name="accion" />
-                </li>
-
-
-                <li>
-                    <label for="drama_si">Drama</label>
-                    <input type="radio" id="drama_si" name="drama" />
-                </li>
-
-
-
-
-                <li>
-                    <label for="comedia_si">Comedia</label>
-                    <input type="radio" id="comedia_si" name="comedia" />
-                </li>
-
-
-
-
-                <li>
-                    <label for="thriller_si">Thriller</label>
-                    <input type="radio" id="thriller_si" name="thriller" />
-                </li>
-
-
-
-
-                <li>
-                    <label for="romance_si">Romance</label>
-                    <input type="radio" id="romance_si" name="romance" />
-                </li>
-
-
-
-
-                <li>
-                    <label for="familiar_si">Familiar</label>
-                    <input type="radio" id="familiar_si" name="familiar" />
-                </li>
-
-
-
-
-                <li>
-                    <label for="crimen_si">Crimen</label>
-                    <input type="radio" id="crimen_si" name="crimen" />
-                </li>
-
-
-
-
-                <li>
-                    <label for="fantasia_si">Fantasía</label>
-                    <input type="radio" id="fantasia_si" name="fantasia" />
-                </li>
-
-
-
-
-
-                <li>
-                    <label for="cienciaficcion_si">Ciencia ficción</label>
-                    <input type="radio" id="cienciaficcion_si" name="cienciaficcion" />
-                </li>
-
-
-            </ol>
-            <br>
-            <button type="button" id=buttonsugerirpelicula onclick="sugerirpelicula()">OBTENER RESULTADOS</button>
-        </form>
+       
+    <form>
+        <label for="seleccionadorpelis"></label>
+        <select name="seleccionadorpelis" id="seleccionadorpelis1">
+            <option value="comedia">Comedia</option>
+            <option value="drama">Drama</option>
+            <option value="romance">Romance</option>
+            <option value="cienciaficcion">Ciencia ficcion</option>
+            <option value="fantasia">Fantasía</option>
+            <option value="familiar">Familiar</option>
+            <option value="thriller">Thriller</option>
+            <option value="crimen">Crimen</option>
+            <option value="accion">Acción</option>
+          </select>
+        <select name="seleccionadorpelis" id="seleccionadorpelis2">
+            <option value="comedia">Comedia</option>
+            <option value="drama">Drama</option>
+            <option value="romance">Romance</option>
+            <option value="cienciaficcion">Ciencia ficcion</option>
+            <option value="fantasia">Fantasía</option>
+            <option value="familiar">Familiar</option>
+            <option value="thriller">Thriller</option>
+            <option value="crimen">Crimen</option>
+            <option value="accion">Acción</option>
+          </select>
+        <br>
+        <button type="button" id=buttonsugerirpelicula onclick="recomendarpelicula()">Obtener resultados</button>
+      </form>
     </div>
+      <dialog id="sugg">
+        <h3>Resultados:</h3>
+        <br>
+        <p id="recomendacion"></p>
+        <button type="button" onclick="cerrar()" id="botoncerrar">Cerrar</button> <button type="button" onclick="location.href='catalogo.html'" id="botonbuscar">Buscar en catálogo</button>
+      </dialog>
+
+
     </main>
 </body>
 

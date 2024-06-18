@@ -6,29 +6,25 @@
     <meta charset="utf-8">
     <script src="funcionescatalogo.js"></script>
     <title>MovieRecs Catálogo</title>
+    <link rel="icon" type="image/x-icon" href="logos/applogo.png">
 </head>
 
 <body>
     <header>
         <div class="cabeza">
             <div class="movierecs">
-                <h1>MovieRecs <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960"
-                        width="48px" fill="rgb(156, 10, 10)">
-                        <path
-                            d="m140-800 74 152h130l-74-152h89l74 152h130l-74-152h89l74 152h130l-74-152h112q24 0 42 18t18 42v520q0 24-18 42t-42 18H140q-24 0-42-18t-18-42v-520q0-24 18-42t42-18Zm0 212v368h680v-368H140Zm0 0v368-368Z" />
-                    </svg>
+                <a href="index.html"></a>
+                <h1>MovieRecs <img src="logos/applogo.png" height="70px" width="70px">
+                    </a>
             </div>
             <div class="homebutton">
                 <a href="index.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
-                        fill="rgb(156, 10, 10)">
-                        <path
-                            d="M220-180h150v-250h220v250h150v-390L480-765 220-570v390Zm-60 60v-480l320-240 320 240v480H530v-250H430v250H160Zm320-353Z" />
-                    </svg>
+                    <img src="logos/homeicon.png" height="50px" width="50px">
                 </a>
             </div>
             </h1>
         </div>
+    
     </header>
 
     <main>
@@ -53,13 +49,18 @@
                 </div>
                 <section class="movielist">
                     <div class="movieitem" id="thetrumanshow">
-                        <p>The Truman Show </p>
-                        <img src="images/thetrumanshow.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_thetrumanshow">
+                            <p>The Truman Show </p>
+                            <img src="images/thetrumanshow.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="10thingsihateaboutyou">
-                        <p>10 Things I Hate About You</p>
-                        <img src="images/10thingsihateaboutyou.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_10thingsihateaboutyou">
+                            <p>10 Things I Hate About You</p>
+                            <img src="images/10thingsihateaboutyou.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
+
                     <div class="movieitem" id="eeaao">
                         <a onclick="guardarLS(this.id)" target="_self" id="peli_eeaao">
                             <p>Everything Everywhere All At Once</p>
@@ -67,136 +68,202 @@
                         </a>
                     </div>
                     <div class="movieitem" id="ted">
-                        <p>TED</p>
-                        <img src="images/ted.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_ted">
+                            <p>TED</p>
+                            <img src="images/ted.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="homealone">
-                        <p>Home Alone</p>
-                        <img src="images/homealone.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_homealone">
+                            <p>Home Alone</p>
+                            <img src="images/homealone.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="themenu">
-                        <p>The Menu</p>
-                        <img src="images/themenu.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_themenu">
+                            <p>The Menu</p>
+                            <img src="images/themenu.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="knivesout">
-                        <p>Knives Out</p>
-                        <img src="images/knivesout.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_knivesout">
+                            <p>Knives Out</p>
+                            <img src="images/knivesout.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="bullettrain">
-                        <p>Bullet Train</p>
-                        <img src="images/bullettrain.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_bullettrain">
+                            <p>Bullet Train</p>
+                            <img src="images/bullettrain.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="lalaland">
-                        <p>La La Land</p>
-                        <img src="images/lalaland.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_lalaland">
+                            <p>La La Land</p>
+                            <img src="images/lalaland.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="arrival">
-                        <p>Arrival</p>
-                        <img src="images/arrival.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_arrival">
+                            <p>Arrival</p>
+                            <img src="images/arrival.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="abouttime">
-                        <p>About Time</p>
-                        <img src="images/abouttime.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_abouttime">
+                            <p>About Time</p>
+                            <img src="images/abouttime.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="thelionking">
-                        <p>The Lion King</p>
-                        <img src="images/thelionking2.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_thelionking">
+                            <p>The Lion King</p>
+                            <img src="images/thelionking2.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="gonegirl">
-                        <p>Gone Girl</p>
-                        <img src="images/gonegirl.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_gonegirl">
+                            <p>Gone Girl</p>
+                            <img src="images/gonegirl.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="nightcrawler">
-                        <p>Nightcrawler</p>
-                        <img src="images/nightcrawler.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_nightcrawler">
+                            <p>Nightcrawler</p>
+                            <img src="images/nightcrawler.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="babydriver">
-                        <p>Baby Driver</p>
-                        <img src="images/babydriver.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_babydriver">
+                            <p>Baby Driver</p>
+                            <img src="images/babydriver.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="palmsprings">
-                        <p>Palm Springs</p>
-                        <img src="images/palmsprings.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_palmsprings">
+                            <p>Palm Springs</p>
+                            <img src="images/palmsprings.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="midnightinparis">
-                        <p>Midnight In Paris</p>
-                        <img src="images/midnightinparis.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_midnightinparis">
+                            <p>Midnight In Paris</p>
+                            <img src="images/midnightinparis.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="theparenttrap">
-                        <p>The Parent Trap</p>
-                        <img src="images/theparenttrap.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_theparenttrap">
+                            <p>The Parent Trap</p>
+                            <img src="images/theparenttrap.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="thebutterflyeffect">
-                        <p>The Butterfly Effect</p>
-                        <img src="images/thebutterflyeffect.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_thebutterflyeffect">
+                            <p>The Butterfly Effect</p>
+                            <img src="images/thebutterflyeffect.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="focus">
-                        <p>Focus</p>
-                        <img src="images/focus.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_focus">
+                            <p>Focus</p>
+                            <img src="images/focus.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="scottpilgrim">
-                        <p>Scott Pilgrim</p>
-                        <img src="images/scottpilgrim.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_scottpilgrim">
+                            <p>Scott Pilgrim</p>
+                            <img src="images/scottpilgrim.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="avatar">
-                        <p>Avatar</p>
-                        <img src="images/avatar.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_avatar">
+                            <p>Avatar</p>
+                            <img src="images/avatar.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="walle">
-                        <p>Wall-E</p>
-                        <img src="images/walle.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_walle">
+                            <p>Wall-E</p>
+                            <img src="images/walle.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="tenet">
-                        <p>Tenet</p>
-                        <img src="images/tenet.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_tenet">
+                            <p>Tenet</p>
+                            <img src="images/tenet.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="thedarkknight">
-                        <p>The Dark Knight</p>
-                        <img src="images/thedarkknight.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_thedarkknight">
+                            <p>The Dark Knight</p>
+                            <img src="images/thedarkknight.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="furyroad">
-                        <p>MAD MAX: Fury Road</p>
-                        <img src="images/furyroad.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_furyroad">
+                            <p>MAD MAX: Fury Road</p>
+                            <img src="images/furyroad.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="et">
-                        <p>E.T.</p>
-                        <img src="images/et.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_et">
+                            <p>E.T.</p>
+                            <img src="images/et.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="theprestige">
-                        <p>The Prestige</p>
-                        <img src="images/theprestige.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_theprestige">
+                            <p>The Prestige</p>
+                            <img src="images/theprestige.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="themask">
-                        <p>The Mask</p>
-                        <img src="images/themask.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_themask">
+                            <p>The Mask</p>
+                            <img src="images/themask.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="thelordoftherings">
-                        <p>The Lord Of The Rings: The Fellowship Of The Ring</p>
-                        <img src="images/thelordoftherings.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_thelordoftherings">
+                            <p>The Lord Of The Rings: The Fellowship Of The Ring</p>
+                            <img src="images/thelordoftherings.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="thehauntedmansion">
-                        <p>The Haunted Mansion</p>
-                        <img src="images/thehauntedmansion.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_thehauntedmansion">
+                            <p>The Haunted Mansion</p>
+                            <img src="images/thehauntedmansion.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="zootopia">
-                        <p>Zootopia</p>
-                        <img src="images/zootopia.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_zootopia">
+                            <p>Zootopia</p>
+                            <img src="images/zootopia.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="kungfupanda">
-                        <p>Kung Fu Panda</p>
-                        <img src="images/kungfupanda.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_kungfupanda">
+                            <p>Kung Fu Panda</p>
+                            <img src="images/kungfupanda.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
-                    <div class="movieitem" id="prisioners">
-                        <p>Prisioners</p>
-                        <img src="images/prisioners.jpg" width="90 px" height="270 px">
+                    <div class="movieitem" id="prisoners">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_prisoners">
+                            <p>Prisoners</p>
+                            <img src="images/prisioners.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="diehard">
-                        <p>Die Hard</p>
-                        <img src="images/diehard.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_diehard">
+                            <p>Die Hard</p>
+                            <img src="images/diehard.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                     <div class="movieitem" id="killbill">
-                        <p>Kill Bill</p>
-                        <img src="images/killbill.jpg" width="90 px" height="270 px">
+                        <a onclick="guardarLS(this.id)" target="_self" id="peli_killbill">
+                            <p>Kill Bill: Vol. 1</p>
+                            <img src="images/killbill.jpg" width="90 px" height="270 px">
+                        </a>
                     </div>
                 </section>
             </div>

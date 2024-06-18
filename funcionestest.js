@@ -71,27 +71,27 @@ if ((selector1 == "romance" && selector2 == "comedia") || (selector2 == "romance
     } else if ((selector1 == "accion" && selector2 == "familiar") || (selector2 == "accion" && selector1 == "familiar")) {
         text = "Kung Fu Panda";
     } else if ((selector1 == "crimen" && selector2 == "thriller") || (selector2 == "crimen" && selector1 == "thriller")) {
-        text = "Prisioners";
+        text = "Prisoners";
     } else if ((selector1 == "accion" && selector2 == "thriller") || (selector2 == "accion" && selector1 == "thriller")) {
         text = "Die Hard";
     } else if ((selector1 == "accion" && selector2 == "crimen") || (selector2 == "accion" && selector1 == "crimen")) {
-        text = "Kill Bill";
+        text = "Kill Bill: Vol. 1";
     } else if ((selector1 == "comedia" && selector2 == "comedia") || (selector2 == "comedia" && selector1 == "comedia")) {
-        text = "Seleccionar dos géneros diferentes";
+        text = "Ha habido un error, seleccionar dos géneros diferentes";
     } else if ((selector1 == "drama" && selector2 == "drama") || (selector2 == "drama" && selector1 == "drama")) {
-        text = "Seleccionar dos géneros diferentes";
+        text = "Ha habido un error, seleccionar dos géneros diferentes";
     } else if ((selector1 == "romance" && selector2 == "romance") || (selector2 == "romance" && selector1 == "romance")) {
-        text = "Seleccionar dos géneros diferentes";
+        text = "Ha habido un error, seleccionar dos géneros diferentes";
     } else if ((selector1 == "cienciaficcion" && selector2 == "cienciaficcion") || (selector2 == "cienciaficcion" && selector1 == "cienciaficcion")) {
-        text = "Seleccionar dos géneros diferentes";
+        text = "Ha habido un error, seleccionar dos géneros diferentes";
     } else if ((selector1 == "fantasia" && selector2 == "fantasia") || (selector2 == "fantasia" && selector1 == "fantasia")) {
-        text = "Seleccionar dos géneros diferentes";
+        text = "Ha habido un error, seleccionar dos géneros diferentes";
     } else if ((selector1 == "familiar" && selector2 == "familiar") || (selector2 == "familiar" && selector1 == "familiar")) {
-        text = "Seleccionar dos géneros diferentes";
+        text = "Ha habido un error, seleccionar dos géneros diferentes";
     } else if ((selector1 == "thriller" && selector2 == "thriller") || (selector2 == "thriller" && selector1 == "thriller")) {
-        text = "Seleccionar dos géneros diferentes";
+        text = "Ha habido un error, seleccionar dos géneros diferentes";
     } else if ((selector1 == "crimen" && selector2 == "crimen") || (selector2 == "crimen" && selector1 == "crimen")) {
-        text = "Seleccionar dos géneros diferentes";
+        text = "Ha habido un error, seleccionar dos géneros diferentes";
     } else if ((selector1 == "accion" && selector2 == "accion") || (selector2 == "accion" && selector1 == "accion")) {
         text = "Ha habido un error, seleccione dos géneros diferentes.";
     }

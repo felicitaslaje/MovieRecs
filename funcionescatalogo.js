@@ -134,8 +134,8 @@ const peliculas = {
         "sinopsis": " Benoit Blanc, un detective implacable, investiga la muerte de un anciano escritor de novelas policíacas en la mansión del difunto. Benoit tendrá que sortear las trampas y mentiras que la excéntrica familia y los sirvientes del novelista han urdido.",
         "duracion": " 2h 10m",
         "fondoindividual": "knivesout_still.jpg",
-        "verahora": ["prime"],
-        "linkprime": "https://www.primevideo.com/dp/amzn1.dv.gti.b0b8a8a5-6a9e-d48f-d5c5-000ff935fc2d?autoplay=0&ref_=atv_cf_strg_wb"
+        "verahora": ["appletv"],
+        "linkappletv": "https://tv.apple.com/ar/movie/entre-navajas-y-secretos/umc.cmc.21f7rjslttoalzd6o9c6cg5ml?at=1000l3V2&ct=justwatch_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1487717311"
     },
     "bullettrain": {
         "title": "Bullet Train ",
